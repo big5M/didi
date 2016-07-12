@@ -1,0 +1,782 @@
+body, .loader,.page-home{
+  height: 100%;
+  width: 8rem;
+  overflow: hidden;
+  user-select: none;
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+  font-family: 'MicrosoftYaHei', '微软雅黑', 'STHeitiSC';
+}
+html {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+}
+.bgmusic,.bgmusicclose {
+    position: fixed;
+    width: 30px;
+    right: 0.3rem;
+    top: 0.3rem;
+    z-index: 99999;
+}
+.bgmusicclose {
+    display: none;
+}
+.all-content {
+    height:100%;
+    width: 8rem;
+    position: relative;
+}
+.loader {
+    position: absolute;
+    background: url("../img/page_loading_bg.jpg") left top no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+    width: 8rem;
+}
+.load-car {
+    width: 159px;
+    height: 63px;
+    background: url(../img/load-car.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    right: 0%;
+    bottom: 5.85rem;
+}
+.load-text {
+    width: 100%;
+    height: 0.39rem;
+    position: absolute;
+    bottom: 37%;
+    left: 0;
+    font-size: 0.15rem;
+    color: white;
+    text-align: center;
+}
+.page-home {
+    height: 100%;
+    width: 8rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url(../img/page_home-bg.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+/*page-home*/
+.identity {
+    width: 90%;
+    top: -20%;
+    position: absolute;
+    -webkit-animation: identitydown 0.7s ease 0.3s 1;
+    -o-animation: identitydown 0.7s ease 0.3s 1 ;
+    animation: identitydown 0.7s ease 0.3s 1 ;
+    -webkit-animation-fill-mode:forwards;
+    -o-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+}
+.img100 {
+    width: 100%;
+}
+.true{
+    width: 5.3rem;
+    top: 2.73rem;
+    position: absolute;
+}
+.true img {
+    width: 0.4rem;
+    position: absolute;
+    top: 6.5rem;
+    left: 4rem;
+    opacity: 0;
+    animation-origin:50% 50%;
+    -webkit-animation:  truerotate 1s 2s ease  1;
+    -o-animation:  truerotate 1s 2s ease  1 ;
+    animation:  truerotate 1s 2s ease  1 ;
+    -webkit-animation-fill-mode:forwards;
+    -o-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+}
+.intro {
+    width: 4.4rem;
+    top: 6.37rem;
+    position: absolute;
+
+}
+.page-home-car {
+    width: 4.64rem;
+    top: 7.62rem;
+    position: absolute;
+}
+.page-home-start {
+    width: 4rem;
+    bottom: 12%;
+    position: absolute;
+     /*background: cyan; */
+     background: url(../img/page_home_btn.png) no-repeat;
+     background-size: 100% 100%;
+    height: 1.1rem;
+    z-index: 10000;
+}
+.page-home-start, .intro {
+    opacity: 0;
+    -webkit-animation: introopa 1s 3s ease  1;
+    -o-animation: introopa 1s 3s ease  1 ;
+    animation: introopa 1s 3s ease  1 ;
+    -webkit-animation-fill-mode:forwards;
+    -o-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+}
+.texts ,.kongge,.levels,.page-home-start ,.page-home-car, .intro, .true ,.identity {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+
+/*快车上面进入*/
+@-moz-keyframes identitydown {
+    0% {
+        top: -10%;
+    }
+    100% {
+        top: 5%;
+    }
+}
+
+@-webkit-keyframes identitydown {
+    0% {
+        top: -10%;
+    }
+    100% {
+        top: 5%;
+    }
+}
+
+@-o-keyframes identitydown {
+    0% {
+        top: -10%;
+    }
+    100% {
+        top: 0%;
+    }
+}
+@keyframes identitydown {
+    0% {
+        top: -10%;
+    }
+    100% {
+        top: 5%;
+    }
+}
+/*真相旋转入内*/
+@keyframes truerotate {
+    0% {
+        width: 200%;
+        top: 0%;
+        left: -50%;
+        transform: rotate(0deg);
+        opacity:0.3;
+    }
+    100% {
+        transform: rotate(360deg);
+        width: 100%;
+        top: 0%;
+        left: 0%;
+        opacity:1;
+    }
+}
+
+@-moz-keyframes truerotate {
+    0% {
+        width: 200%;
+        top: 0%;
+        left: -50%;
+        transform: rotate(0deg);
+        opacity:0.3;
+    }
+    100% {
+        transform: rotate(360deg);
+        width: 100%;
+        top: 0%;
+        left: 0%;
+        opacity:1;
+    }
+}
+
+@-webkit-keyframes truerotate {
+    0% {
+        width: 200%;
+        top: 0%;
+        left: -50%;
+        transform: rotate(0deg);
+        opacity:0.3;
+    }
+    100% {
+        transform: rotate(360deg);
+        width: 100%;
+        top: 0%;
+        left: 0%;
+        opacity:1;
+    }
+}
+
+@-o-keyframes truerotate {
+    0% {
+        width: 200%;
+        top: 0%;
+        left: -50%;
+        transform: rotate(0deg);
+        opacity:0.3;
+    }
+    100% {
+        transform: rotate(360deg);
+        width: 100%;
+        top: 0%;
+        left: 0%;
+        opacity:1;
+    }
+}
+@keyframes introopa {
+    0% {
+        opacity:0;
+    }
+
+    100% {
+        opacity:1;
+    }
+}
+
+@-moz-keyframes introopa {
+    0% {
+        opacity:0;
+    }
+
+    100% {
+        opacity:1;
+    }
+}
+@-o-keyframes introopa {
+    0% {
+        opacity:0;
+    }
+
+    100% {
+        opacity:1;
+    }
+}
+
+@-webkit-keyframes introopa {
+    0% {
+        opacity:0;
+    }
+
+    100% {
+        opacity:1;
+    }
+}
+/*page2*/
+ .page_level{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 8rem;
+    background: url(../img/page_cai_bg.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+
+.levels {
+    position: absolute;
+    width: 7.2rem;
+    bottom: 40%;
+}
+
+.kongge span img {
+    width: 60%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.texts {
+    position: absolute;
+    width: 7.2rem;
+    height: 2.25rem;
+    bottom: 0.5rem;
+}
+.texts span {
+    display: inline-block;
+    width: 0.75rem;
+    height: 0.75rem;
+    position: absolute;
+    /*background: cyan*/
+}
+.texts span:nth-child(2) {
+    top: 0.25rem;
+    left: 1rem;
+}
+.texts span:nth-child(3) {
+    top: 0.25rem;
+    left: 2.55rem;
+}
+.texts span:nth-child(4) {
+    top: 0.25rem;
+    left: 4.07rem
+}
+.texts span:nth-child(5) {
+    top: 0.25rem;
+    left: 5.6rem;
+}
+.texts span:nth-child(6) {
+    top: 1.225rem;
+    left: 1rem;
+}
+.texts span:nth-child(7) {
+    top: 1.225rem;
+    left: 2.55rem;
+}
+.texts span:nth-child(8) {
+    top: 1.225rem;
+    left: 4.07rem;
+}
+.texts span:nth-child(9) {
+    top: 1.225rem;
+    left: 5.6rem;
+}
+.kongge span {
+    display: inline-block;
+    width: 1.612rem;
+    height: 1.512rem;
+    position: absolute;
+}
+.konggeimg {
+    height: 100%;
+    width: auto;
+}
+.kongge {
+    position: absolute;
+    width: 3.88rem;
+    height:1.612rem;
+    bottom:24%;
+}
+.span1{
+    /*top: 1px;*/
+    left: 0rem;
+}
+.span2 {
+    /*top: 1px;*/
+    right: 0px;
+}
+.span3{
+    top: 1px;
+    left:0rem;
+}
+.span4 {
+    top: 1px;
+    left: 2.1rem;
+}
+.span5 {
+    top: 1px;
+    right:0rem;
+}
+.span6 {
+    top: 1px;
+    left: 0rem;
+}
+.span7{
+    top: 1px;
+    left:1.75rem;
+}
+.span8 {
+    top: 1px;
+    left: 3.6rem;
+}
+.span9 {
+    top: 1px;
+    right:0rem;
+}
+.suc {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+
+}
+.suc .bg {
+    width: 100%;
+    height: 100%;
+    background: url(../img/light.png) no-repeat;
+    background-size: 100% auto;
+    background-position: 20%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+.succ-text {
+    font-size: 0.5rem;
+    font-family: "Microsoft YaHei";
+    color: #ee8601;
+    line-height: 0.6rem;
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    top: 7rem;
+    width: 80%;
+    left: 10%;
+}
+.succ-content {
+    position: absolute;
+    padding-top: 5.5rem;
+    opacity: 1;
+}
+@keyframes sucbg {
+    0% {
+        opacity:0;
+    }
+    70% {
+        opacity:1;
+    }
+    85% {
+        opacity:0.7;
+    }
+    100% {
+        opacity:1;
+    }
+}
+@-moz-keyframes sucbg {
+    0% {
+        opacity:0;
+    }
+    70% {
+        opacity:1;
+    }
+    85% {
+        opacity:0.7;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-webkit-keyframes sucbg {
+    0% {
+        opacity:0;
+    }
+    70% {
+        opacity:1;
+    }
+    85% {
+        opacity:0.7;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@-o-keyframes sucbg {
+    0% {
+        opacity:0;
+    }
+    70% {
+        opacity:1;
+    }
+    85% {
+        opacity:0.7;
+    }
+    100% {
+        opacity:1;
+    }
+}
+.suc .bg {
+    opacity:1;
+    -webkit-animation: sucbg 0.6s ease infinite;
+    -o-animation: sucbg 0.6s ease infinite ;
+    animation: sucbg 0.6s ease infinite ;
+    -webkit-animation-fill-mode:forwards;
+    -o-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+}
+/*失败页面*/
+.loser {
+    width: 100%;
+    height: 100%;
+    background: url(../img/rain_one.png) repeat;
+    background: url(../img/rain_two.png) repeat;
+    background-size: 100% 100%;
+    /*opacity: 0.6;*/
+    -webkit-animation: snow 3s infinite;
+    -o-animation: snow 3s infinite ;
+    animation: snow 3s infinite ;
+    -webkit-animation-fill-mode:forwards;
+    -o-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+@keyframes snow {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+  100% {
+    background-position: 640px 1288px, 640px 644px, 640px 644px;
+  }
+}
+@-moz-keyframes {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+  100% {
+    background-position: 640px 1288px, 640px 644px, 640px 644px;
+  }
+}
+
+@-webkit-keyframes {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+  100% {
+    background-position: 640px 1288px, 640px 644px, 640px 644px;
+  }
+}
+
+@-o-keyframes {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+  100% {
+    background-position: 640px 1288px, 640px 644px, 640px 644px;
+  }
+}
+.loser_img {
+    padding-top: 4rem;
+    width: 90%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.loser-text {
+    font-size: 0.5rem;
+    font-family: "Microsoft YaHei";
+    color: #ccc;
+    line-height: 0.6rem;
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    top: 5.5rem;
+    width: 80%;
+    left: 10%;
+}
+.game_over, .game-over-bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.game-over-bg {
+    background: url(../img/page_result_ok_bg-1.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+.game_over div {
+    position: absolute;
+    z-index: 10;
+}
+.game-over-heng {
+    width: 0;
+    right: 3.5rem;
+    top:25%;
+    -webkit-animation: hengbig 1.5s 0.5s ease infinite;
+    -o-animation: hengbig 1.5s 0.5s ease infinite ;
+    animation: hengbig 1.5s 0.5s ease infinite ;
+}
+.game-over-heng img,.game-over-share img {
+    width: 100%;
+}
+.game-over-share {
+    width: 75px;
+    right: 0.5rem;
+    top: 0.5rem;
+    -webkit-animation:sharebig 1.5s 0.5s ease infinite;
+    -o-animation:sharebig 1.5s 0.5s ease infinite ;
+    animation:sharebig 1.5s 0.5s ease infinite ;
+}
+
+.score_0 {
+  background: url(../img/page_result_bad_0.png) center top no-repeat;
+}
+
+.score_1 {
+  background: url(../img/page_result_bad_1.png) center top no-repeat;
+}
+
+.score_2 {
+  background: url(../img/page_result_ok_0.png) center top no-repeat;
+}
+
+.score_3 {
+  background: url(../img/page_result_ok_1.png) center top no-repeat;
+}
+
+.score_4 {
+  background: url(../img/page_result_ok_2.png) center top no-repeat;
+}
+.game-over-text {
+    font-size: 20px;
+    line-height: 23px;
+    top: 12%;
+    height: 30px;
+    width: 100%;
+    background-size: 100% 100%;
+}
+.game-over-btn-anwei {
+    width: 50%;
+    height: 10%;
+    left: 25%;
+    bottom: 20%;
+}
+.game-over-btn-repeat {
+    width: 50%;
+    height: 10%;
+    left: 25%;
+    bottom: 8%;
+    z-index: 100;
+}
+@keyframes hengbig {
+    0% {
+        width:0;
+        right: 3.5rem;
+        top:27%;
+        opacity: 1;
+    }
+    100% {
+        width: 96px;
+        top: 0.25rem;
+        right: 5rem;
+        top:25%;
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes hengbig {
+    0% {
+        width:0;
+        right: 3.5rem;
+        top:27%;
+        opacity: 1;
+    }
+    100% {
+        width: 96px;
+        top: 0.25rem;
+        right: 5rem;
+        top:25%;
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes hengbig {
+    0% {
+        width:0;
+        right: 3.5rem;
+        top:27%;
+        opacity: 1;
+    }
+    100% {
+        width: 96px;
+        top: 0.25rem;
+        right: 5rem;
+        top:25%;
+        opacity: 0;
+    }
+}
+
+@-o-keyframes hengbig {
+    0% {
+        width:0;
+        right: 3.5rem;
+        top:27%;
+        opacity: 1;
+    }
+    100% {
+        width: 96px;
+        top: 0.25rem;
+        right: 5rem;
+        top:25%;
+        opacity: 0;
+    }
+}
+@keyframes  sharebig{
+    0% {
+        transform:  scale(1);
+        opacity:0.8
+    }
+    50% {
+        transform: scale(0.8);
+        opacity:1
+    }
+    100% {
+        transform: scale(1);
+        opacity:1
+    }
+}
+@-moz-keyframes sharebig{
+    0% {
+        transform:  scale(1);
+        opacity:0.8
+    }
+    50% {
+        transform: scale(0.8);
+        opacity:1
+    }
+    100% {
+        transform: scale(1);
+        opacity:1
+    }
+}
+
+@-webkit-keyframes sharebig{
+    0% {
+        transform:  scale(1);
+        opacity:0.8
+    }
+    50% {
+        transform: scale(0.8);
+        opacity:1
+    }
+    100% {
+        transform: scale(1);
+        opacity:1
+    }
+}
+
+@-o-keyframes sharebig{
+    0% {
+        transform:  scale(1);
+        opacity:0.8
+    }
+    50% {
+        transform: scale(0.8);
+        opacity:1
+    }
+    100% {
+        transform: scale(1);
+        opacity:1
+    }
+}
+/*-------*/
+/*,.page-home*/
+.page-home,.loader  ,.loser, .page_level,.game_over ,.game_over{
+    display: none;
+}
